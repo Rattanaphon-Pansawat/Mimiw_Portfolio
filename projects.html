@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mimiw Portfolio | Projects</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="src/styles/main.css">
     <link rel="stylesheet" href="src/styles/layout.css">
     <link rel="stylesheet" href="src/styles/components.css">
+
+    <style>
+        .projects-container {
+            width: 98%; 
+            max-width: none;
+            margin: 0 auto;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* 🔥 แก้ไข: จัดหัวข้อ My Projects ชิดซ้าย */
+        .page-header {
+            text-align: left;  /* 👈 ชิดซ้าย */
+            padding-left: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .page-header h1 {
+            color: #088395;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .project-image-full {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .project-image-full img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,9 +67,48 @@
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 50px; text-align: center;">
-        <h1>Projects Page</h1>
-        <p>เนื้อหา Project กำลังมา (รอภาพจาก Figma)</p>
+    <main class="projects-container">
+        
+        <div class="page-header">
+            <h1>My Projects</h1>
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_1.png" alt="Project Slide 1">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_2.png" alt="Project Slide 2">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_3.png" alt="Project Slide 3">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_4.png" alt="Project Slide 4">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_5.png" alt="Project Slide 5">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_6.png" alt="Project Slide 6">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_7.png" alt="Project Slide 7">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_8.png" alt="Project Slide 8">
+        </div>
+
+        <div class="project-image-full">
+            <img src="public/image/IMG4_1_9.png" alt="Project Slide 9">
+        </div>
+
     </main>
 
     <script src="src/scripts/main.js"></script>

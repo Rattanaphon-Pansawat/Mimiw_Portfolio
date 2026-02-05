@@ -12,6 +12,47 @@
     <link rel="stylesheet" href="src/styles/main.css">
     <link rel="stylesheet" href="src/styles/layout.css">
     <link rel="stylesheet" href="src/styles/components.css">
+
+    <style>
+        .activities-container {
+            width: 98%; 
+            max-width: none;
+            margin: 0 auto;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* ระยะห่างระหว่างรูป */
+        }
+
+        /* จัดหัวข้อ My Activities ชิดซ้ายบน */
+        .page-header {
+            text-align: left;  /* 👈 ชิดซ้าย */
+            padding-left: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .page-header h1 {
+            color: #088395;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .activity-image-full {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background: #fff;
+        }
+
+        .activity-image-full img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,48 +68,48 @@
         </div>
     </nav>
 
-    <main class="container">
-        <h1 class="page-title">My Activities</h1>
-
-        <div class="activities-grid">
-            
-            <div class="activity-card">
-                <img src="public/image/IMG2_1_UEC11th.png" alt="Activity 1" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_2_UEC11th.png" alt="Activity 2" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_3_UEC12th.png" alt="Activity 3" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_4_SDG7.png" alt="Activity 4" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_5_Hackathon.png" alt="Activity 5" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_6_AAICamp.png" alt="Activity 6" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_7_AAIBootcamp.png" alt="Activity 7" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_8_MyOrderCloud2.png" alt="Activity 8" class="activity-img">
-            </div>
-
-            <div class="activity-card">
-                <img src="public/image/IMG2_9_WebDev.png" alt="Activity 9" class="activity-img">
-            </div>
-
+    <main class="activities-container">
+        
+        <div class="page-header">
+            <h1>My Activities</h1>
         </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_1_UEC11th.png" alt="Activity 1">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_2_UEC11th.png" alt="Activity 2">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_3_UEC12th.png" alt="Activity 3">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_4_SDG7.png" alt="Activity 4">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_5_Hackathon.png" alt="Activity 5">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_6_AAICamp.png" alt="Activity 6">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_7_AAIBootcamp.png" alt="Activity 7">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_8_MyOrderCloud2.png" alt="Activity 8">
+        </div>
+
+        <div class="activity-image-full">
+            <img src="public/image/IMG2_9_WebDev.png" alt="Activity 9">
+        </div>
+
     </main>
 
     <script src="src/scripts/main.js"></script>
